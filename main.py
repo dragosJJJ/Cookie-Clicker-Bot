@@ -52,7 +52,7 @@ while game_is_on:
 
         timeout = time.time() + 5
 
-
+#after 5 minutes of playing the clicks_per_second are printed and the program ends
 if time.time() > five_min:
     cookie_per_s = driver.find_element(by=By.ID, value="cps").text
     print(cookie_per_s)
